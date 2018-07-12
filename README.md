@@ -1,6 +1,5 @@
 # Lit2Vec
 
-# Book2Vec
 
 (In progress, will be updating over the next week)
 
