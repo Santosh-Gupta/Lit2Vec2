@@ -1,6 +1,6 @@
 # Lit2Vec2
 
-A book recommender for rare books, containing 2,829,853 books. 
+A book recommender for rare books, containing 2,829,853 books. This project is a sequel to the original lit2vec project, which only contains 10,000 books. https://github.com/Santosh-Gupta/Lit2Vec
 
 ## Inspiration
 
