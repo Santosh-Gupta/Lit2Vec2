@@ -28,10 +28,16 @@ To see how exactly it was trained, please see our notebook
 
 'Lit2Vec2TrainingPublic.ipynb'
 
-## Train on MS Azure
+## Azure Training Process
 
-For those with MS Azure, check out the 'pytorch-train-l2v2.ipynb' notebook for training 'Lit2Vec2TrainingPublic.ipynb' on MS Azure. 
+Due to the large size of the dataset and the resources required to train the Machine Learning model, we opted to use the Azure Machine Learning Workspace for the training cycle of our project. Azure gave us the facility of using Jupyter notebooks and Python scripts on their Virtual Machines to run numerous experiments in a straightforward environment.
 
-## Try it out
+As we had been using PyTorch in the initial prototypes of this project and in previous versions of this project, we found it best to use the PyTorch class within the Azure ML library. This lead to much cleaner setup of the experiments and their environments.
 
-To try out our recommender with the 'Lit2Vec2Recommender.ipynb' notebook. 
+The intial step in this Azure experiment notebook is to define the workspace and the experiment variables. The compute target is then set up. This step allocates the resourcse that will be needed to run the experiments. In our case, we used the Standard_N6 and set a maximum of 4 nodes in the cluster.
+
+We then set up the PyTorch object which allows us to use the training scripts that had been in use until now. Once set up with the appropriate command arguments and dependencies, we can pass this object as an argument to the Experiment object and submit the experiment to let it run. When the experiment completes, we register the model with the workspace where it will save along with a number of files being saved from within the training script. 
+
+To see the Azure Experiment process, please see out notebook
+
+'pytorch-train-l2v2.ipynb'
