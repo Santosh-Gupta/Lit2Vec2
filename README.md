@@ -27,3 +27,11 @@ For the recommender to recommend more rare books, for the negative samples we ch
 To see how exactly it was trained, please see our notebook
 
 'Lit2Vec2TrainingPublic.ipynb'
+
+## Train on MS Azure
+
+For those with MS Azure, check out the 'pytorch-train-l2v2.ipynb' notebook for training 'Lit2Vec2TrainingPublic.ipynb' on MS Azure. 
+
+## Try it out
+
+To try out our recommender with the 'Lit2Vec2Recommender.ipynb' notebook. 
