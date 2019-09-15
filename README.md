@@ -24,6 +24,10 @@ The training algorithm is based on the skip-gram version of word2vec. A 'target'
 
 For the recommender to recommend more rare books, for the negative samples we chose to sample from a log-uniform distribution [https://stats.stackexchange.com/questions/155552/what-does-log-uniformly-distribution-mean] and we ordered the books with the most occuring books at the head of the distribution, and the least occuring books occuring at the tail of the distribution. What this means is that the frequency of a particular book being selected as a negative sample is correlated with how popular the book is. Which allows for increased embedding similairty properties for the more rare books. 
 
+To fit all of the embeddings within the memory limits of our systems, we used SpeedTorch, a library designed to augment the training parameters of embeddings training. 
+
+https://github.com/Santosh-Gupta/SpeedTorch
+
 To see how exactly it was trained, please see our notebook
 
 'Lit2Vec2TrainingPublic.ipynb'
