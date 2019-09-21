@@ -35,7 +35,7 @@ To see how exactly it was trained, please see our notebook
 
 ## Try it out!
 
-Run the 'Lit2Vec2Recommender.ipynb' notebook. The notebook will download the dictionaries and training embeddings right from my Google Drive, and you then you can start to play with getting recommendations and makng TSNE maps with the recommendations.  
+Run the 'Lit2Vec2Recommender.ipynb' notebook. The notebook will download the dictionaries and training embeddings right from my Google Drive, and you then you can start to play with getting recommendations and make TSNE maps with the recommendations.  
 
 ## Azure Training Process
 
