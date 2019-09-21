@@ -32,6 +32,11 @@ To see how exactly it was trained, please see our notebook
 
 'Lit2Vec2TrainingPublic.ipynb'
 
+
+## Try it out!
+
+Run the 'Lit2Vec2Recommender.ipynb' notebook. The notebook will download the dictionaries and training embeddings right from my Google Drive, and you then you can start to play with getting recommendations and makng TSNE maps with the recommendations.  
+
 ## Azure Training Process
 
 Due to the large size of the dataset and the resources required to train the Machine Learning model, we opted to use the Azure Machine Learning Workspace for the training cycle of our project. Azure gave us the facility of using Jupyter notebooks and Python scripts on their Virtual Machines to run numerous experiments in a straightforward environment.
